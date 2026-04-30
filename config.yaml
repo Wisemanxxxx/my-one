@@ -1,0 +1,25 @@
+model:
+  name: MiMo-V2.5
+  base_url: https://api.xiaomimimo.com/v1
+  max_tokens: 8192
+  temperature: 0.3
+
+agents:
+  planner:
+    temperature: 0.3
+    max_tokens: 4096
+  crawler:
+    temperature: 0.5
+    max_tokens: 4096
+  parser:
+    temperature: 0.3
+    max_tokens: 8192
+  validator:
+    temperature: 0.2
+    max_tokens: 4096
+  writer:
+    temperature: 0.4
+    max_tokens: 8192
+
+token_stats:
+  enabled: true
